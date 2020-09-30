@@ -2,25 +2,8 @@
 
 > **Important**
 >
-> Attention, nous partons ici du principe que vous maîtrisez déjà Docker
+> Attention, nous partons ici du principe que vous maîtrisez déjà Docker, et que vous l'avez déja installé sur votre système.
 
-## Installation de docker
-
-Docker est maintenant disponible sur toutes les distributions récentes.
-Pour l’installer sur une distribution
-
--   à base de ``rpm``
-
-````
-yum install docker
-````
-
--   à base de ``deb``
-
-````
-apt-get update
-apt-get install docker.io
-````
 
 ## Installation d’une image Jeedom
 
