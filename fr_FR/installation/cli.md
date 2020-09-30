@@ -1,19 +1,19 @@
 # Installation en ligne de commande
 
-# Installation automatique
+## Installation automatique
 
-Pour une installation automatique vous merci de suivre la documentation correspondant à votre type de système : 
+Pour une installation automatique, merci de suivre la documentation correspondant à votre type de système
 
 - Sur une [VM](https://doc.jeedom.com/fr_FR/installation/vm)
-- Sur du [bearemetal (type Intel Nuc)](https://doc.jeedom.com/fr_FR/installation/baremetal)
+- Sur du [baremetal (type Intel Nuc)](https://doc.jeedom.com/fr_FR/installation/baremetal)
 
-# Installation manuel
+## Installation manuelle
 
 Vous trouverez ici la documentation pour installer Jeedom sur Debian
 
 > **Important**
 >
-> Debian 10 (Buster) est la distribution officiellement supportée pour la version 3.3.X ou plus de Jeedom (mais Stretch reste parfaitement fonctionnelle). Si vous ne maîtrisez pas un minimum les environnements Linux, nous vous conseillons de partir une Smart.
+> Debian 10 (Buster) est la distribution officiellement supportée pour la version 3.3.X ou plus de Jeedom (mais Stretch reste parfaitement fonctionnelle). Si vous ne maîtrisez pas un minimum les environnements Linux, nous vous conseillons de partir sur une Smart.
 
 > **Important**
 >
@@ -21,7 +21,7 @@ Vous trouverez ici la documentation pour installer Jeedom sur Debian
 
 >**TIPS**
 >
->Pour connaitre l'ip de la vm (une fois connecté dessus, les identifiants s'affichent sur l'écran de connexion) faite ``ip -s -c -h a``
+>Pour connaitre l'adresse ip de la vm (une fois connecté dessus, les identifiants s'affichent sur l'écran de connexion) faite ``ip -s -c -h a``
 
 Connectez-vous en SSH à votre système et faites :
 
