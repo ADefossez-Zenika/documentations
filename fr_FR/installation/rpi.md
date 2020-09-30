@@ -9,23 +9,23 @@ Vous trouverez ici la documentation pour installer Jeedom sur un raspberry Pi **
 >
 > Debian 10 (Buster) est la distribution officiellement supportée.
 
-# Installation automatique
+## Installation automatique
 
-## Télécharger la dernière image
+### Téléchargez la dernière image
 
 Vous retrouvez les images [ici](https://images.jeedom.com/rpi/)
 
 > **IMPORTANT**
 >
->Il y 2 types d'image, celle jeedom-debian-XXXX-rpi-X.X.XX.zip qui est en 32bits, elle est compatible avec tous les modèles de RPI et la jeedom-debian-XXXX-rpi-64-X.X.XX.zip qui est en 64bits, elle est (nettement) plus performante mais n'est compatible que RPI2/3/4. Pour resumer en RPI 1, prenez la 32bits sinon prenez la 64bits (rpi-64)
+>Il y a 2 types d'image : la jeedom-debian-XXXX-rpi-X.X.XX.zip qui est en 32bits et est compatible avec tous les modèles de RPI et la jeedom-debian-XXXX-rpi-64-X.X.XX.zip qui est en 64bits, elle est (nettement) plus performante mais n'est compatible qu'avec les RPI2/3/4. Pour résumer en RPI 1, prenez la 32bits, sinon prenez la 64bits (rpi-64)
 
 Raspberry Pi imager permet de télécharger directement l'image d'installation de Raspberry Pi OS, dans sa version la plus récente.
 
-## Gravez cette image sur une carte MicroSD avec Raspberry Pi Imager par exemple
+### Gravez cette image sur une carte MicroSD
 
-Vous pouvez le télécharger [ici](https://www.raspberrypi.org/downloads/)
+... Avec Raspberry Pi Imager par exemple. Vous pouvez le télécharger [ici](https://www.raspberrypi.org/downloads/)
 
-## Démarrer le PI
+### Démarrez le PI
 
 Insérez votre carte MicroSD, branchez le câble réseau et branchez l’alimentation.
 
@@ -41,29 +41,31 @@ Il vous suffit ensuite, depuis votre navigateur, de saisir : http://IP_RPI/ (en 
 
 Ensuite, vous pouvez suivre la documentation [Premier pas avec Jeedom](https://doc.jeedom.com/fr_FR/premiers-pas/index)
 
-# Installation en ligne de commande
+## Installation en ligne de commande
 
-## Télécharger la dernière image "lite"
+### Téléchargez la dernière image "lite"
 
 [ici](https://downloads.raspberrypi.org/raspbian_lite_latest)
 
-Raspberry Pi Imager permet de télécharger directement l'image d'installation de Raspberry Pi OS, dans sa version la plus récente.
+> **Note**
+>
+> Raspberry Pi Imager permet de télécharger directement l'image d'installation de Raspberry Pi OS, dans sa version la plus récente.
 
-## Gravez cette image sur une carte MiroSD avec Raspberry Pi Imager par exemple
+### Gravez cette image sur une carte MiroSD
 
-[ici](https://www.raspberrypi.org/downloads/)
+... Avec Raspberry Pi Imager par exemple. Il peut être téléchargé [ici](https://www.raspberrypi.org/downloads/)
 
 > **Note**
 >
 > Si vous utilisez Etcher pour graver votre image, l’étape de décompression est inutile (format Zip reconnu directement dans la sélection du fichier image).
 
-## Activer un accès SSH
+### Activez un accès SSH
 
 > **Warning**
 >
 > Pour des raisons de sécurité, l’accès SSH n’est plus activé par défaut sur cette distribution. Il faut donc l’activer.
 
-Il faut créer sur la partition boot (la seule accessible sous Windows) un fichier ssh vide.
+Il faut créer sur la partition boot (la seule accessible sous Windows) un fichier *ssh* vide.
 
 Il suffit de faire un clic droit : nouveau / document texte et le renommer en "ssh" **sans extension**
 
@@ -73,20 +75,20 @@ Il suffit de faire un clic droit : nouveau / document texte et le renommer en "s
 
 ![ExtensionFichier](images/ExtensionFichier.PNG)
 
-## Démarrer le Raspberry Pi
+### Démarrez le Raspberry Pi
 
 Insérez votre carte MicroSD, branchez le câble réseau et branchez l’alimentation.
 
-## Se connecter en SSH
+### Connectez vous en SSH
 
-Identifiez votre Raspberry Pi sur le réseau
+#### Identifiez votre Raspberry Pi sur le réseau
 
 Il faut connaître l’adresse Ip de votre Raspberry PI. Plusieurs solutions :
 
--   Consultez la configuration DHCP dans votre routeur
--   Utilisez un scanner de port type "Angry IP Scanner" [ici](http://angryip.org/download/#windows)
+- Consultez la configuration DHCP dans votre routeur
+- Utilisez un scanner de port type "Angry IP Scanner" [ici](http://angryip.org/download/#windows)
 
-Etablir la connexion
+#### Etablissez la connexion
 
 Ensuite, utilisez par exemple PuTTY pour établir votre connexion [Ici](http://www.putty.org/)
 
@@ -98,7 +100,7 @@ Connectez-vous avec les identifiants **pi / raspberry**
 >
 > Pour des raisons de sécurité, il est impératif de modifier le mot de passe par défaut. Les cas de piratages basés sur l’exploitation du couple login/mot de passe par défaut du Raspberry Pi sont particulièrement répandus. (commande : passwd et sudo passwd)
 
-## Lancer le script d’installation jeedom
+### Lancez le script d’installation jeedom
 
 ``wget -O- https://raw.githubusercontent.com/jeedom/core/master/install/install.sh | sudo bash``
 
@@ -122,7 +124,7 @@ Il vous suffit ensuite d’aller sur IP\_MACHINE\_JEEDOM
 ./install.sh -w /var/www/html -z
 ````
 
-## Optimisation du système
+### Optimisation du système
 
 Si vous utilisez votre Raspberry Pi pour Jeedom sans écran connecté, il est recommandé d'affecter le minimum de RAM à la partie vidéo.
 
