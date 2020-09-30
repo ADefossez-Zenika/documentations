@@ -8,8 +8,8 @@ Le Recovery Mode USB englobe à la fois le système, l’OS, et aussi l’applic
 
 Il permet :
 
-- La reinitialisation de la Jeedom Smart en configuration « usine » OS+Jeedom.
-- La reinitialisation de la Jeedom Smart en configuration « usine », en appliquant ensuite sa sauvegarde Jeedom.
+- La réinitialisation de la Jeedom Smart en configuration « usine » OS+Jeedom.
+- La réinitialisation de la Jeedom Smart en configuration « usine », en appliquant ensuite sa sauvegarde Jeedom.
 
 Pour rappel la gestion des sauvegardes/restauration est disponible dans Jeedom dans le menu « roues crantées » en haut à droite, puis « Sauvegardes ».
 
@@ -25,13 +25,13 @@ Matériel necessaire : une clé USB (minimum 8Go).
 
 - téléchargez l’archive que nous fournissons : [backupJeedom.tar.gz](https://images.jeedom.com/smart/backupJeedom.tar.gz). Attention de bien vérifier que le fichier à pour nom backupJeedom.tar.gz pour que la restauration marche.
 - copiez cette archive sans la modifier ni la dézipper, sur une clé USB formatée en FAT32 et vierge
-- arrêtez votre Smart proprement par Jeedom
+- arrêtez votre Smart proprement, par Jeedom
 - débranchez là
 - insérez votre clé USB
 - redémarrez la Smart
 - patientez environ 30min, box non accessible **NE PAS DEBRANCHER**
 - cherchez votre Smart sur le réseau
-- vous reconnecter avec le login : admin et le mot de passe : admin
+- reconnectez vous avec le login : admin et le mot de passe : admin
 
 > **Important**
 >
