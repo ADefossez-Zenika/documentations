@@ -1,4 +1,4 @@
-# Installation Jeeodm sur une mini+
+# Installation Jeedom sur une mini+
 
 > **Tip**
 >
@@ -16,7 +16,7 @@ Vous devez aller [ici](https://images.jeedom.com/jeeboard/),puis dans le dossier
 
 ## Décompression de l’image de Jeedom
 
-Décompresser l’image de Jeedom (si vous n’avez rien pour la décompresser vous pouvez installer [winrar](http://www.clubic.com/telecharger-fiche9632-winrar.html)), vous devez obtenir :
+Décompressez l’image de Jeedom (si vous n’avez rien pour la décompresser vous pouvez installer [winrar](http://www.clubic.com/telecharger-fiche9632-winrar.html)), vous devez obtenir :
 
 ![install humming 2](images/install_humming_2.PNG)
 
@@ -26,7 +26,7 @@ Décompresser l’image de Jeedom (si vous n’avez rien pour la décompresser v
 
 Insérez votre carte SD dans votre ordinateur puis lancez le logiciel Etcher, donnez-lui le chemin de l’image, le chemin de la carte SD et cliquez sur "Flash!". Le logiciel va graver la carte SD et vérifier la gravure.
 
-Vous n’avez plus qu’à mettre la carte SD dans la Jeedomboard (ou Hummingboard), à brancher le réseau et l’alimentation, votre Jeedom va démarrer (5 min) et vous devriez le voir sur le réseau.
+Vous n’avez plus qu’à mettre la carte SD dans la Jeedomboard (ou Hummingboard), à brancher le cable réseau et l’alimentation, votre Jeedom va démarrer (5 min) et vous devriez le voir sur le réseau.
 
 > **Tip**
 >
